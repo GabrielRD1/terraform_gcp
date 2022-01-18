@@ -32,11 +32,11 @@ resource "google_compute_instance" "default" {
      // Include this section to give the VM an external ip address
    }
  }
-
+/* 
  metadata = {
    ssh-keys = "gabrielrosadias:${file("~/.ssh/instace_gcp.pub")}"
  }
-
+ */
  
 }
 
