@@ -1,7 +1,7 @@
 // Configure the Google Cloud provider
 provider "google" {
  #credentials = file("terraform-338212-6a8757c53c45.json")
- project     = "terraform-338212"
+ project     = var.project_name
  region      = "us-west1"
 }
 

@@ -19,6 +19,7 @@ terraform {
     organization = "grd"
     workspaces {
       name = "teste"
+      #prefix = "my-app-"
     }
   }
 }
