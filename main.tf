@@ -1,6 +1,6 @@
 // Configure the Google Cloud provider
 provider "google" {
- credentials = file("terraform-338212-6a8757c53c45.json")
+ #credentials = file("terraform-338212-6a8757c53c45.json")
  project     = "terraform-338212"
  region      = "us-west1"
 }
@@ -32,15 +32,11 @@ resource "google_compute_instance" "default" {
      // Include this section to give the VM an external ip address
    }
  }
-/* 
- metadata = {
-   ssh-keys = "gabrielrosadias:${file("~/.ssh/instace_gcp.pub")}"
- }
- */
+/* cler */
  
 }
 
-resource "google_compute_firewall" "default" {
+/* esource "google_compute_firewall" "default" {
  name    = "flask-app-firewall"
  network = "default"
 
@@ -49,7 +45,7 @@ resource "google_compute_firewall" "default" {
    ports    = ["5000"]
  }
  source_tags = ["mynetwork"]
-}
+} */
 
 // A variable for extracting the external IP address of the instance
 output "ip" {

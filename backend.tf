@@ -18,7 +18,7 @@ terraform {
     hostname = "app.terraform.io"
     organization = "grd"
     workspaces {
-      name = "dev"
+      name = "teste"
     }
   }
 }
